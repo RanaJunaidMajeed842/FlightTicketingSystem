@@ -3,7 +3,6 @@ class Flight():
     def __init__(self,capacity):
         self.capacity = capacity
         self.person = []
-        
     
     def addpassenger(self,name):
         if  not self.open_seats():
@@ -14,8 +13,6 @@ class Flight():
     def open_seats(self):
         return self.capacity-len(self.person)
     
-
-
 f = Flight(3)
 people = ["Junaid", "Majeed", "Zuhaib", "Mirha"]
 for person in people:
